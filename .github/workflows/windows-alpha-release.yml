@@ -37,6 +37,13 @@ jobs:
       - name: Privacy guard
         run: python scripts/privacy_guard.py
 
+      - name: Create temporary Windows icon
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path "apps/desktop/src-tauri/icons" | Out-Null
+          $iconBase64 = "AAABAAEAICAAAAAAIAALAQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAANJJREFUeJzdlz0OgCAMhcV4AicXBxYn738SdwYPopMJIfy810pA36jYfm0fEM28bNfQUGPL5P8AON2h+t5IPRBLvNq9LgBTLQoDAWjaXAJJAmhni8J8fxdUA5A4OqdUvEkbICfER9QIUGMyBqYAVrsXg5/uoLoFjyAG4SeKPasC4Cd5qmWr9pUdQSkomjz3Xn0OaLdrvwdRNwDaFotvw1CS2xGB738Ej9hRoOvpo/jNdTQAEpztlMgDqSSSHfMdE4YKq61yGaEQmsNK/Gf0lpp74AYYb0FHxQvtQQAAAABJRU5ErkJggg=="
+          [System.IO.File]::WriteAllBytes("apps/desktop/src-tauri/icons/icon.ico", [System.Convert]::FromBase64String($iconBase64))
+
       - name: Build and publish Windows Alpha prerelease
         uses: tauri-apps/tauri-action@1deb371b0cd8bd54025b384f1cd735e725c4060f
         env:
