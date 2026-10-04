@@ -73,8 +73,8 @@ The Community edition is open source and intended to remain free. Organizations 
 the project through:
 
 - **Founding sponsorships**
-- **Design Partner engagements** from €4,900
-- **Pilot Partner engagements** from €12,500
+- **Design Partner engagements**
+- **Pilot Partner engagements**
 - **Enterprise / OEM / commercial licensing**
 - **Professional deployment and security services**
 
@@ -83,3 +83,30 @@ production security SLA.
 
 See [COMMERCIAL.md](COMMERCIAL.md) for commercial options and
 [SPONSORING.md](SPONSORING.md) for project sponsorship.
+
+
+## Download the Windows Alpha
+
+The latest public evaluation build is published as a **GitHub prerelease**:
+
+https://github.com/Anonuemos154/sitewarden-mail/releases/tag/alpha-latest
+
+Choose the Windows installer asset from the release page.
+
+> **Alpha warning:** the current desktop build is for evaluating the interface, Safe View concepts
+> and security architecture. Gmail, Microsoft Graph and generic IMAP are not yet production-ready,
+> and the current Windows installer may be unsigned.
+
+### Start and test it
+
+1. Download the Windows installer from the Alpha release.
+2. Verify that the publisher/signature status matches the release notes. Alpha builds may be
+   unsigned until code signing is enabled.
+3. Install and launch **SiteWarden Mail**.
+4. The current UI opens with synthetic demo messages so the inbox, Safe View, risk signals,
+   quarantine and cleanup concepts can be explored without exposing a real mailbox.
+5. Do **not** treat the current Alpha as a production security control or connect sensitive
+   production mailboxes until the provider and release gates are marked ready.
+
+See [docs/product/ALPHA_USER_GUIDE.md](docs/product/ALPHA_USER_GUIDE.md) for the exact current
+capabilities and limitations.
