@@ -1,157 +1,91 @@
-# Revenue website copy — MSD / SiteWarden
+# MSD website revenue / product copy — no public prices
 
-This file is implementation copy for the public commercial funnel.
+## Site structure
 
-## Recommended MSD page
+MSD International is the flagship. SiteWarden is the security line and SiteWarden Mail is a product
+within the Tools / Systems portfolio.
 
-Path:
-`/tools/sitewarden-mail/`
+### Navigation
+- Systems
+- Security
+- Tools
+- Company
+- Contact
 
-### Hero
+**Do not expose an Admin link in header, footer, mobile navigation, sitemap, structured data or
+public page content.** Administrative access must use a known direct route plus authentication;
+security must not depend on obscurity.
 
+## Homepage hero
+**Systems for complex environments.**
+
+MSD develops and operates digital systems where software, data, automation and security meet
+real-world operations.
+
+Primary CTA: **Explore systems**
+Secondary CTA: **View tools**
+
+## Tools page — SiteWarden Mail card
+### SiteWarden Mail
+**Open, local-first email security and inbox operations.**
+
+A desktop mail-security platform under active development. SiteWarden Mail is designed to reduce
+trust in active email content, reconstruct messages into safer representations and combine security
+signals with inbox management.
+
+CTAs:
+- **Download Alpha**
+- **View on GitHub**
+- **Become a design partner**
+
+Download target:
+https://github.com/Anonuemos154/sitewarden-mail/releases/tag/alpha-latest
+
+GitHub:
+https://github.com/Anonuemos154/sitewarden-mail
+
+## Product page hero
 **SiteWarden Mail**
+### Treat email as untrusted input.
 
-**Open email infrastructure for environments where trust matters.**
-
-A local-first, open-source mail security and operations client for Gmail, Microsoft 365 and
-standards-based mail.
-
-Community access stays open. Organisations can engage through paid design partnerships, controlled
-pilots, deployment engineering and commercial licensing.
-
-Primary CTA:
-**Become a design partner**
-
-Secondary CTA:
-**View the open-source project**
-
-### Commercial strip
-
-**Build with us before stable release.**
-
-SiteWarden Mail is in active Alpha development. We work with selected organisations that want their
-mail environment, threat model or integration requirements represented before the stable product
-line is finalized.
-
-Cards:
-
-#### Design Partner
-**From €4,900**
-
-For organisations that want direct technical input into the product.
-
-- architecture / requirements workshop;
-- environment assessment;
-- evaluation access;
-- prioritized technical feedback;
-- maintainer review.
-
-CTA: **Discuss a design partnership**
-
-#### Pilot Partner
-**From €12,500**
-
-For teams preparing a controlled real-world evaluation.
-
-- deployment planning;
-- provider/integration scope;
-- controlled pilot;
-- priority issue handling;
-- pilot report and roadmap.
-
-CTA: **Plan a pilot**
-
-#### Enterprise / OEM
-**Custom**
-
-For organisations that need central policy, integration, commercial redistribution or contractual
-support.
-
-- commercial licensing;
-- OEM / white label;
-- SSO / SCIM / SIEM;
-- managed policy and rule distribution;
-- deployment engineering;
-- support/SLA.
-
-CTA: **Talk to MSD**
-
-### Trust section
-
-**Open source is part of the security model.**
-
-The architecture is designed on the assumption that attackers may read the source code.
-Security should come from constrained trust boundaries, reviewable implementation and signed
-releases — not secrecy.
-
-### Alpha disclaimer
-
-SiteWarden Mail is currently Alpha / Active Development. There is no stable signed production
-release yet. Paid Alpha engagements are consulting, evaluation and co-development projects unless
-a written agreement states otherwise.
-
----
-
-## Recommended MSD Tools card
-
-**SiteWarden Mail**
-
-Local-first open-source email security and operations.
-
-Safe View, explainable risk signals, unified mail operations and a security architecture designed
-to reduce trust in active email content.
+Local-first email security, safe reconstruction and inbox operations in one open-source desktop
+platform.
 
 Badges:
 - Open Source
-- Local First
-- Alpha
-- Security
+- AGPL-3.0-or-later
+- Local-first
+- Alpha / Active Development
 
-CTA 1: **Explore**
-CTA 2: **Commercial partnerships**
+Primary CTA: **Download Windows Alpha**
+Secondary CTA: **View source**
+Tertiary CTA: **Design partner / enterprise**
 
----
+## Download notice
+**Alpha software.** The current public build is for evaluation and UI/security-architecture testing.
+Provider integrations and production-grade attachment isolation are still under development. The
+installer is currently unsigned unless the release page explicitly states otherwise.
 
-## Recommended SiteWarden page commercial CTA
+## Commercial section
+### Build with us
+Organizations can engage as design partners, pilot partners, enterprise users, strategic sponsors
+or OEM/commercial-license partners. Scope and commercial terms are agreed individually.
 
-Keep SiteWarden technical. Do not turn it into a pricing site.
+CTA: **Discuss a deployment**
 
-Insert near bottom:
+## Privacy/contact rules
+- Never publish a private personal Gmail/Googlemail address.
+- Use role-based business contact routes only.
+- Do not embed private addresses in HTML comments, JavaScript, JSON-LD, source maps, environment
+  templates, repository metadata or downloadable example configs.
+- Public business contact data must follow applicable German legal requirements.
 
-### Deploy or evaluate SiteWarden Mail
+## Admin removal acceptance test
+A deploy is not complete until all of the following return no visible Admin navigation:
+- desktop header/footer;
+- mobile menu/footer;
+- Tools page;
+- SiteWarden Mail product page;
+- sitemap and generated navigation data.
 
-For organisations evaluating mail-security architecture, controlled pilots or custom integrations,
-commercial engagements are coordinated through MSD International.
-
-CTA:
-**Commercial enquiries via MSD**
-
-This keeps MSD as the revenue/brand flagship while SiteWarden remains the technical security layer.
-
-## Lead qualification form
-
-Fields:
-- name;
-- company;
-- work email;
-- role;
-- number of users/mailboxes;
-- provider: Microsoft 365 / Google Workspace / IMAP / mixed;
-- interest: Design Partner / Pilot / Enterprise / OEM / Security services;
-- desired timeline;
-- short problem description.
-
-Do not ask for mailbox credentials or sensitive incident evidence in the public form.
-
-## Conversion event names
-
-Use privacy-preserving first-party analytics if analytics is deployed:
-
-- `swm_view_product`
-- `swm_click_github`
-- `swm_click_design_partner`
-- `swm_click_pilot`
-- `swm_click_enterprise`
-- `swm_submit_lead`
-
-Do not include email addresses or message contents in analytics events.
+The admin route itself must be noindex and protected by real authentication.
