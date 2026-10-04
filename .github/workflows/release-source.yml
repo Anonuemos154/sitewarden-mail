@@ -10,7 +10,7 @@ jobs:
   source:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Source archive
         run: |
           git archive --format=tar.gz --prefix=sitewarden-mail-${GITHUB_REF_NAME}/ \
