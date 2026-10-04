@@ -1,6 +1,6 @@
-# SiteWarden Mail — Foundation Repository
+# SiteWarden Mail
 
-> **Working title.** Trademark/name clearance should happen before public launch.
+> **Alpha / Active Development.** No stable or signed binary is available yet.
 
 SiteWarden Mail is planned as a **local-first, open-source email security and productivity client**:
 one desktop application for Gmail, Microsoft 365/Outlook and standards-based mailboxes, with a
@@ -59,3 +59,9 @@ The application should combine four product classes that are usually separate:
 - `apps/browser-extension/` — thin browser companion only.
 
 Read `IMPLEMENTATION_STATUS.md` before treating anything here as production-ready.
+
+## License
+
+SiteWarden Mail is licensed under `AGPL-3.0-or-later`. See `LICENSE` and
+`LICENSE-STRATEGY.md`. SiteWarden and MSD names and logos are not granted as
+trademarks by the software license.

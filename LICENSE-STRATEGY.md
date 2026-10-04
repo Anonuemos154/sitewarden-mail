@@ -1,9 +1,9 @@
 # License strategy
 
-Recommended public-launch model:
+Confirmed public-launch model (owner approval: 2026-10-04):
 
 ## Code
-**AGPL-3.0-or-later** for the main application and service components, after legal review.
+**AGPL-3.0-or-later** for the main application and service components.
 
 Why:
 - keeps the software genuinely free/open;
@@ -24,5 +24,5 @@ logos and official signing identity under a separate trademark policy.
 Do not casually mix third-party dependencies whose licenses are incompatible with the chosen
 license. Add automated license scanning before public releases.
 
-This repository intentionally does not pretend the licensing decision is final. Obtain legal
-review before launch.
+The owner confirmed this licensing decision before the public repository launch. This record is
+not a substitute for legal advice about individual distribution or dual-licensing arrangements.
