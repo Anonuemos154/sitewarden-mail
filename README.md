@@ -65,3 +65,21 @@ Read `IMPLEMENTATION_STATUS.md` before treating anything here as production-read
 SiteWarden Mail is licensed under `AGPL-3.0-or-later`. See `LICENSE` and
 `LICENSE-STRATEGY.md`. SiteWarden and MSD names and logos are not granted as
 trademarks by the software license.
+
+
+## Commercial partnerships and sponsorship
+
+The Community edition is open source and intended to remain free. Organizations can fund or adopt
+the project through:
+
+- **Founding sponsorships**
+- **Design Partner engagements** from €4,900
+- **Pilot Partner engagements** from €12,500
+- **Enterprise / OEM / commercial licensing**
+- **Professional deployment and security services**
+
+During Alpha, paid engagements are evaluation, co-development or consulting work rather than a
+production security SLA.
+
+See [COMMERCIAL.md](COMMERCIAL.md) for commercial options and
+[SPONSORING.md](SPONSORING.md) for project sponsorship.
