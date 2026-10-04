@@ -1,0 +1,57 @@
+name: Windows Alpha Release
+
+on:
+  push:
+    branches: [alpha-build]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: windows-alpha-release
+  cancel-in-progress: false
+
+jobs:
+  build-windows-alpha:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1
+        with:
+          version: 10
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@89b12181fb390509a0842a86cc55eeb8eb928c1d
+
+      - name: Install frontend dependencies
+        working-directory: apps/desktop
+        run: pnpm install --frozen-lockfile
+
+      - name: Privacy guard
+        run: python scripts/privacy_guard.py
+
+      - name: Build and publish Windows Alpha prerelease
+        uses: tauri-apps/tauri-action@1deb371b0cd8bd54025b384f1cd735e725c4060f
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: apps/desktop
+          tagName: alpha-latest
+          releaseName: SiteWarden Mail — Windows Alpha
+          releaseBody: |
+            Alpha / Active Development.
+
+            This build is intended for evaluation of the desktop interface and security architecture.
+            Gmail, Microsoft Graph and generic IMAP provider connections are not production-ready yet.
+            The Windows build may be unsigned until project code-signing is enabled.
+
+            Download only from this official repository.
+          releaseDraft: false
+          prerelease: true

@@ -1,45 +1,26 @@
 # Business model — free core without giving away the business
 
-## Recommendation
+Keep the core application and official personal-use builds free. Monetize trust, operations,
+support, organization management, deployment and alternative commercial licensing.
 
-Keep the **core application and official personal-use builds free**. Monetize trust, operations,
-support and organization management rather than locking basic inbox security behind a paywall.
-
-### Free Community
-- full local client;
-- Gmail/Microsoft/IMAP;
+## Community
+- local client;
+- supported providers as they become production-ready;
 - core security analysis;
 - Safe View;
-- cleanup;
-- productivity basics;
-- community rule feed;
+- cleanup/productivity basics;
 - source code.
 
-### Supporter (voluntary)
-Suggested €4–€10/month.
-- sponsor badge/profile;
-- beta channel opt-in;
-- voting on roadmap;
-- no security feature hostage-taking.
+## Sponsorship
+Voluntary sponsorship funds maintenance, audits, security work and open infrastructure. Sponsorship
+does not buy weaker security rules or guaranteed roadmap control.
 
-### Managed / Enterprise
-Paid recurring revenue.
-- organization policy console;
-- fleet/device health;
-- centralized rule rollout;
-- SSO/SCIM;
-- SIEM/export;
-- priority threat feed;
-- deployment packages;
-- support/SLA;
-- security review reports.
+## Managed / Enterprise
+Commercial value can include organization policy, fleet/device health, centralized rule rollout,
+SSO/SCIM, SIEM/export, priority threat feeds, deployment packages, support/SLA and security review
+reports.
 
-Possible target pricing after product-market validation:
-- small teams: roughly €8–€15/user/month;
-- enterprise: minimum platform fee + per-seat or annual contract.
-
-### SiteWarden/MSD services
-High-margin service layer:
+## SiteWarden/MSD services
 - deployment assessment;
 - mail-security architecture;
 - tenant hardening;
@@ -47,13 +28,8 @@ High-margin service layer:
 - custom integration;
 - enterprise rollout.
 
-This naturally feeds existing SiteWarden/MSD project work rather than competing with it.
+## Dual licensing
+AGPL community license plus an alternative commercial license can monetize embedding/OEM use when
+the project's contributor-rights model permits it.
 
-### Dual licensing
-AGPL community license + commercial embedding license can generate B2B revenue from vendors that
-want to incorporate the software without AGPL obligations.
-
-## Why donations alone are not enough
-A security email client creates recurring costs: provider compliance, code signing, audits,
-vulnerability response, rule maintenance and support. Donations and grants are excellent seed
-funding, but enterprise services/support are the more durable revenue engine.
+Commercial terms are quote-based rather than published as a fixed public price list.

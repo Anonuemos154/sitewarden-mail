@@ -1,35 +1,17 @@
-# GitHub Sponsors setup — owner human gate
+# GitHub Sponsors setup
 
-The repository now contains `.github/FUNDING.yml` and a proposed sponsorship structure, but the
-GitHub account must be approved for receiving sponsorships before the Sponsor button becomes a real
-payment channel.
+GitHub Sponsors can be used as an optional community-support channel once the account is approved.
 
-## Owner-only steps
+## Public presentation
+Do not hard-code sponsor prices into the repository or website. Configure tiers within GitHub
+Sponsors so they can be adjusted without changing product positioning.
 
-GitHub currently requires the sponsored developer to provide:
-- GitHub Sponsors profile/application;
-- two-factor authentication;
-- bank/payout information;
-- tax information;
-- required identity/account confirmations.
+Recommended tier concepts:
+- Supporter
+- Builder
+- Project Sponsor
+- Founding Sponsor
+- Strategic Sponsor (handled through direct contact)
 
-These are personal/legal/financial steps and should not be delegated by sharing credentials.
-
-## Suggested tiers
-
-Monthly:
-- $5 Supporter
-- $25 Builder
-- $100 Project Sponsor
-- $500 Founding Sponsor
-
-Higher company sponsorships should be handled by direct invoice/contract rather than forcing a
-large transaction through a consumer sponsorship tier.
-
-## After approval
-
-Verify:
-- repository Sponsor button resolves correctly;
-- sponsor profile mentions SiteWarden Mail;
-- tiers do not promise guaranteed feature delivery;
-- company sponsorship enquiries are routed to MSD commercial contact.
+Sponsorship is distinct from paid pilots, deployment work, commercial licensing and contractual
+support.
