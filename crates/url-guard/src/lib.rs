@@ -14,7 +14,9 @@ pub struct UrlObservation {
 
 pub fn inspect(raw: &str) -> Option<UrlObservation> {
     let parsed = url::Url::parse(raw).ok()?;
-    if !matches!(parsed.scheme(), "http" | "https" | "mailto") { return None; }
+    if !matches!(parsed.scheme(), "http" | "https" | "mailto") {
+        return None;
+    }
     let host = parsed.host_str().unwrap_or_default();
     let (unicode_host, _) = idna::domain_to_unicode(host);
     let ascii_host = idna::domain_to_ascii(host).unwrap_or_else(|_| host.to_string());
@@ -36,7 +38,9 @@ pub fn inspect(raw: &str) -> Option<UrlObservation> {
 mod tests {
     use super::*;
     #[test]
-    fn rejects_javascript() { assert!(inspect("javascript:alert(1)").is_none()); }
+    fn rejects_javascript() {
+        assert!(inspect("javascript:alert(1)").is_none());
+    }
     #[test]
     fn detects_userinfo() {
         let x = inspect("https://paypal.example@evil.invalid/login").unwrap();

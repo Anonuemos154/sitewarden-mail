@@ -9,7 +9,11 @@ pub struct MimeLimits {
 }
 impl Default for MimeLimits {
     fn default() -> Self {
-        Self { max_message_bytes: 50 * 1024 * 1024, max_parts: 500, max_header_bytes: 256 * 1024 }
+        Self {
+            max_message_bytes: 50 * 1024 * 1024,
+            max_parts: 500,
+            max_header_bytes: 256 * 1024,
+        }
     }
 }
 
@@ -26,15 +30,23 @@ pub enum GuardError {
 }
 
 pub fn validate(raw: &[u8], limits: &MimeLimits) -> Result<(), GuardError> {
-    if raw.len() > limits.max_message_bytes { return Err(GuardError::MessageTooLarge); }
-    let header_end = raw.windows(4).position(|w| w == b"\r\n\r\n")
+    if raw.len() > limits.max_message_bytes {
+        return Err(GuardError::MessageTooLarge);
+    }
+    let header_end = raw
+        .windows(4)
+        .position(|w| w == b"\r\n\r\n")
         .or_else(|| raw.windows(2).position(|w| w == b"\n\n"))
         .unwrap_or(raw.len());
-    if header_end > limits.max_header_bytes { return Err(GuardError::HeadersTooLarge); }
+    if header_end > limits.max_header_bytes {
+        return Err(GuardError::HeadersTooLarge);
+    }
     let parsed = mailparse::parse_mail(raw).map_err(|_| GuardError::Parse)?;
     fn count_parts(p: &mailparse::ParsedMail<'_>) -> usize {
         1 + p.subparts.iter().map(count_parts).sum::<usize>()
     }
-    if count_parts(&parsed) > limits.max_parts { return Err(GuardError::TooManyParts); }
+    if count_parts(&parsed) > limits.max_parts {
+        return Err(GuardError::TooManyParts);
+    }
     Ok(())
 }

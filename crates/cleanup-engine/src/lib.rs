@@ -25,7 +25,10 @@ pub fn plan_noise_cleanup(message_ids: Vec<MessageId>, reason: impl Into<String>
     CleanupPlan {
         plan_id: Uuid::new_v4(),
         reason: reason.into(),
-        actions: message_ids.into_iter().map(PlannedAction::Archive).collect(),
+        actions: message_ids
+            .into_iter()
+            .map(PlannedAction::Archive)
+            .collect(),
         requires_confirmation: true,
     }
 }

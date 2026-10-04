@@ -15,6 +15,10 @@ pub enum VaultError {
 /// and OS-backed key storage. Do not write OAuth refresh tokens into ordinary SQLite fields.
 pub trait Vault {
     fn put_message(&self, message: &MessageEnvelope) -> Result<(), VaultError>;
-    fn get_message(&self, account: &AccountId, id: &MessageId) -> Result<Option<MessageEnvelope>, VaultError>;
+    fn get_message(
+        &self,
+        account: &AccountId,
+        id: &MessageId,
+    ) -> Result<Option<MessageEnvelope>, VaultError>;
     fn delete_cached_message(&self, account: &AccountId, id: &MessageId) -> Result<(), VaultError>;
 }

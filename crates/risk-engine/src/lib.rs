@@ -20,7 +20,8 @@ pub fn analyze(message: &MessageEnvelope) -> RiskReport {
             code: "auth.dmarc.fail".into(),
             severity: Severity::High,
             title: "DMARC-Prüfung fehlgeschlagen".into(),
-            explanation: "Die Authentifizierungsinformation des Providers meldet DMARC=fail.".into(),
+            explanation: "Die Authentifizierungsinformation des Providers meldet DMARC=fail."
+                .into(),
             evidence: vec![],
         });
     }
@@ -47,13 +48,18 @@ pub fn analyze(message: &MessageEnvelope) -> RiskReport {
                 code: "url.visible_target_mismatch".into(),
                 severity: Severity::Medium,
                 title: "Sichtbarer Link und Ziel unterscheiden sich".into(),
-                explanation: "Der Linktext sieht wie eine URL aus, zeigt aber auf ein anderes Ziel.".into(),
+                explanation:
+                    "Der Linktext sieht wie eine URL aus, zeigt aber auf ein anderes Ziel.".into(),
                 evidence: vec![link.visible_text.clone(), link.raw_target.clone()],
             });
         }
     }
 
-    let score = signals.iter().map(|s| points(&s.severity) as u16).sum::<u16>().min(100) as u8;
+    let score = signals
+        .iter()
+        .map(|s| points(&s.severity) as u16)
+        .sum::<u16>()
+        .min(100) as u8;
 
     RiskReport {
         report_id: Uuid::new_v4(),
@@ -71,7 +77,12 @@ mod tests {
     #[test]
     fn score_is_capped_at_100() {
         let severities = [Severity::Critical, Severity::Critical];
-        let total = severities.iter().map(points).map(u16::from).sum::<u16>().min(100);
+        let total = severities
+            .iter()
+            .map(points)
+            .map(u16::from)
+            .sum::<u16>()
+            .min(100);
         assert_eq!(total, 100);
     }
 }

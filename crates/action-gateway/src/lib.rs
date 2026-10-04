@@ -18,7 +18,10 @@ pub enum ActionError {
     Provider(#[from] ProviderError),
 }
 
-pub fn execute_confirmed<P: MailProvider>(provider: &P, action: RequestedAction) -> Result<(), ActionError> {
+pub fn execute_confirmed<P: MailProvider>(
+    provider: &P,
+    action: RequestedAction,
+) -> Result<(), ActionError> {
     let mutation = match action {
         RequestedAction::Archive(ids) => MailMutation::Archive(ids),
         RequestedAction::Trash(ids) => MailMutation::Trash(ids),

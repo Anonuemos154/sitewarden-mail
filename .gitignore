@@ -14,3 +14,6 @@ Thumbs.db
 *.pem
 secrets/
 test-mailboxes/
+.cargo-home/
+.rustup-home/
+rustup-init.exe

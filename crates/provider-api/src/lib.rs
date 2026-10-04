@@ -27,6 +27,9 @@ pub enum MailMutation {
 
 pub trait MailProvider {
     fn account_id(&self) -> &AccountId;
-    fn fetch_changed(&self, cursor: Option<&str>) -> Result<(Vec<MessageEnvelope>, String), ProviderError>;
+    fn fetch_changed(
+        &self,
+        cursor: Option<&str>,
+    ) -> Result<(Vec<MessageEnvelope>, String), ProviderError>;
     fn apply(&self, mutation: MailMutation) -> Result<(), ProviderError>;
 }

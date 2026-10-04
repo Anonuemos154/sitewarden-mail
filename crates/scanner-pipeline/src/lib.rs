@@ -16,5 +16,8 @@ pub fn scan(message: &MessageEnvelope) -> ScanOutcome {
     // 7. safe reconstruction
     let risk = risk_engine::analyze(message);
     let safe_document = safe_render::render(message);
-    ScanOutcome { risk, safe_document }
+    ScanOutcome {
+        risk,
+        safe_document,
+    }
 }
