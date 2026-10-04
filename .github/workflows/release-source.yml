@@ -17,7 +17,7 @@ jobs:
             -o sitewarden-mail-${GITHUB_REF_NAME}.tar.gz HEAD
           sha256sum sitewarden-mail-${GITHUB_REF_NAME}.tar.gz > SHA256SUMS.txt
       - name: Attest source archive
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: sitewarden-mail-${{ github.ref_name }}.tar.gz
       - uses: softprops/action-gh-release@v2
