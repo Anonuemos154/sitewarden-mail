@@ -33,3 +33,10 @@ jobs:
         with: { node-version: '22', cache: 'pnpm', cache-dependency-path: apps/desktop/pnpm-lock.yaml }
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
+
+  privacy-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject personal consumer-mail addresses
+        run: python scripts/privacy_guard.py
