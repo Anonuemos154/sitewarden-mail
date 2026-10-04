@@ -1,0 +1,319 @@
+{
+  "generated_at_utc": "2026-10-04T11:01:17.901665+00:00",
+  "project": "SiteWarden Mail Foundation",
+  "file_count": 78,
+  "files": [
+    {
+      "path": ".editorconfig",
+      "sha256": "1e2b20139723b7c508c05aff8ad51b0ef95f9e5c7a0119bcbef12e2d50ec4c35"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/security-feature.md",
+      "sha256": "ab761c651cece4a64dc3085eafa186214acefcb1fb76d78671b648cac15a4a47"
+    },
+    {
+      "path": ".github/workflows/README.md",
+      "sha256": "693a96b6189191e6eba09743321d1c16400f0723c66848c84805367444f3802b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "d81f55621be26c092783ed7f156645f7c2adcf268edabad0a5c8d337a88d3f90"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "ea4cee65d14eeab26e97533f173faa75af12580e14047c0e078a2cfa70a29730"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "af7a435eee917daeb3fb6e3685fab2e3ff7bb4f5ed27251199212712339297f4"
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "cc3053a9cb614595544f5ebea79427fc895ece88bd29117d8ee11c3bc09c2512"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "sha256": "0299f9d3e90e66a1b742bba5510707bab6f23532ba99dbcaec02c249ae16ae83"
+    },
+    {
+      "path": "IMPLEMENTATION_STATUS.md",
+      "sha256": "434e903306d2bda170d79117a1f0a91a8f9f9eb505a77308401bbe90287bc139"
+    },
+    {
+      "path": "LICENSE-STRATEGY.md",
+      "sha256": "cc9b6ce03ca570402eafd9b32edb6be9d4637e8953a66aa8417606736a96b6cf"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c90cf1e20b52c4e74468ec233873fe83aabe69bea67582273c8cfee8a1fc1257"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "0a5d744a49378e136ec3b037c0229bc0f763bf0cb325e23bbdebd585462d4a42"
+    },
+    {
+      "path": "apps/browser-extension/README.md",
+      "sha256": "4ed11eafcc805b89991ea0caa868dbca42fd06d2a7636b3a057113ae3e6e73e8"
+    },
+    {
+      "path": "apps/browser-extension/manifest.json",
+      "sha256": "367a5fa875c8cd746296858fc23fda1d588a62b240bb4a5f67fbc27ed1732b57"
+    },
+    {
+      "path": "apps/browser-extension/native-host-manifest.example.json",
+      "sha256": "4ba8666f3a4648628129eaa411eb2bc7aab03c613cce74c5e77ee46e3cf14f0a"
+    },
+    {
+      "path": "apps/browser-extension/service-worker.js",
+      "sha256": "f0c0a5e82cd274b62a489a6037624d6af1840e1c9ddddaa94fe6aa02c9a7f2f6"
+    },
+    {
+      "path": "apps/desktop/index.html",
+      "sha256": "3cefc0983035d0ac1bc992ed39329f8ea097877ae73575ae8bf6d562109929c9"
+    },
+    {
+      "path": "apps/desktop/package.json",
+      "sha256": "ffdfc2f55148166b5d06464dd998ee84c97526933a8fd6a86bb1a7783454100c"
+    },
+    {
+      "path": "apps/desktop/src/App.tsx",
+      "sha256": "c0447f45b385c9169120ccc571972a2c064e67fd9680c1ca855247f5e0228f53"
+    },
+    {
+      "path": "apps/desktop/src/main.tsx",
+      "sha256": "a45849ddd4aec3f0a89c0df2ca0f0650f91fa9cc8fa87994ba6382a0fe95e3b2"
+    },
+    {
+      "path": "apps/desktop/src/styles.css",
+      "sha256": "1ee2faf776316f71357f89e8e583a46347167cd0906c084d6fac3b74711b9e9e"
+    },
+    {
+      "path": "apps/desktop/src-tauri/Cargo.toml",
+      "sha256": "2fa25050fa53034698b796800f15321be73cde67049bb6dbf55a0a2ef917b0cd"
+    },
+    {
+      "path": "apps/desktop/src-tauri/build.rs",
+      "sha256": "8af41c0062014fc594e4bb9899e60ee9930ab57d4cf0c73041ff557d6ec736e6"
+    },
+    {
+      "path": "apps/desktop/src-tauri/capabilities/default.json",
+      "sha256": "547b95f42e66e8517ce08337b731c22c71dd17f5ea7d83af27eb2c08b0bf0a17"
+    },
+    {
+      "path": "apps/desktop/src-tauri/src/main.rs",
+      "sha256": "63c117bb25c39e3bfc575d2e3426f2456f98bc59f6421c83d67db46a5732d36c"
+    },
+    {
+      "path": "apps/desktop/src-tauri/tauri.conf.json",
+      "sha256": "08636cebd81c22efb5f8809ba77af81a9a9a9597a6970e140778015cb5e53dc8"
+    },
+    {
+      "path": "apps/desktop/tsconfig.json",
+      "sha256": "cc32a3c2be133425d30e112e3dc863c9dbe1ecbbdd81123abf6d6a0300a8ae5c"
+    },
+    {
+      "path": "apps/desktop/vite.config.ts",
+      "sha256": "a3df7034a47f8822b68b0737884ad1c48a7088a23d08d5ec514265ea141e6d4d"
+    },
+    {
+      "path": "crates/cleanup-engine/Cargo.toml",
+      "sha256": "798df6561077dc33097a6c6ba16f0e720fb49f14e65477003347455db1202561"
+    },
+    {
+      "path": "crates/cleanup-engine/src/lib.rs",
+      "sha256": "afc73c8120122330888adc83a9061f3dfa3c706d6c2cf7ae0a454995084df2a5"
+    },
+    {
+      "path": "crates/domain/Cargo.toml",
+      "sha256": "28c938512d490490450c3a6e31c0a2f20d6826864d1ff1f80676849a0cba0608"
+    },
+    {
+      "path": "crates/domain/src/lib.rs",
+      "sha256": "f787e540c3d0bd8a91c2e0fbe29e4c4e320383f33b560e0988521c3e29521e36"
+    },
+    {
+      "path": "crates/provider-api/Cargo.toml",
+      "sha256": "b68403f9be4a422581f301e284da189354592a12bd1d2e66122ef7951c7c4f8e"
+    },
+    {
+      "path": "crates/provider-api/src/lib.rs",
+      "sha256": "90ec3cc1949ff45bff8aa0b1bdb289deacbb52f1ae9a59a3e7fd44c1069b1776"
+    },
+    {
+      "path": "crates/risk-engine/Cargo.toml",
+      "sha256": "c327f26a3a62cf4166775ab9fc77a835e253c743c7eea32c7ba9416a14980118"
+    },
+    {
+      "path": "crates/risk-engine/src/lib.rs",
+      "sha256": "ab6a975b4c0e7a88222a744d619a3a4d9c00e64c0caa844abe5e73a3750efd13"
+    },
+    {
+      "path": "crates/safe-render/Cargo.toml",
+      "sha256": "657e111b7e5701c9c4a211c09b5e45e31d1208457e3de675156ac11ba4b27e66"
+    },
+    {
+      "path": "crates/safe-render/src/lib.rs",
+      "sha256": "dbcf3fab76fd2be72649f857ea898d1523ea7f1df8afbbfd6e50f576212f71a5"
+    },
+    {
+      "path": "crates/scanner-pipeline/Cargo.toml",
+      "sha256": "6a84feeba912d5fcbd83415b461fd562c226f67bf14bd1f130e2ea2bfd16db33"
+    },
+    {
+      "path": "crates/scanner-pipeline/src/lib.rs",
+      "sha256": "b70aad450e3c2a096c1e9e132dc4a060b51236539fae38303755261074358824"
+    },
+    {
+      "path": "crates/storage-vault/Cargo.toml",
+      "sha256": "b2e2aca1d97a95e56bc61f98d07cca87cd06f9e342eb350d9b0fa5ba1402768c"
+    },
+    {
+      "path": "crates/storage-vault/src/lib.rs",
+      "sha256": "6a169287a4aefc75a7a42dc0a76721c588a9d4a7a8a947b57b88a3d6038248be"
+    },
+    {
+      "path": "docs/business/90_DAY_PLAN.md",
+      "sha256": "45274adef26073f3ab5b691b86ab8443edc53307832bd24a9963da0a4d1260ca"
+    },
+    {
+      "path": "docs/business/BUSINESS_MODEL.md",
+      "sha256": "38e7c317009498c315bb58487ff8a6ec85fd8a8f502475f255886b835f78bcdf"
+    },
+    {
+      "path": "docs/business/COMMERCIALIZATION.md",
+      "sha256": "722cac617affda99f96e1db67b2bdb1f929a828545a8ce8f70bea270b6586aeb"
+    },
+    {
+      "path": "docs/business/FUNDING_2026.md",
+      "sha256": "7f92a8011423a904e9b67e028ccdd9499a35e85842b6de69676667bb4e29a13e"
+    },
+    {
+      "path": "docs/business/GO_TO_MARKET.md",
+      "sha256": "6c3fdcbd07a51add68cbd899781e834f84eefd2ae3138f59fe9aa51eee412648"
+    },
+    {
+      "path": "docs/business/GRANT_PITCH_DRAFT.md",
+      "sha256": "76923a033b0aa930e5f50a10ef9f43e8eaf8d5de44d5043fce4ef1a26e26d648"
+    },
+    {
+      "path": "docs/distribution/RELEASE_GATES.md",
+      "sha256": "dc10fee93bb0cabfc1683a99e118b44cd6d2454de9d6c84b1d6dbfd4b7d22972"
+    },
+    {
+      "path": "docs/distribution/STORES.md",
+      "sha256": "9cfafcfe032742e2ad8363a5d2227c264269f698aad3fd57c10995a731f90f7e"
+    },
+    {
+      "path": "docs/implementation/ADR-001-DESKTOP-FIRST.md",
+      "sha256": "82fc821bc66d82247283feadeadea0c054986198f3f9ce734258fb755e0890c5"
+    },
+    {
+      "path": "docs/implementation/ADR-002-SAFE-DOCUMENT.md",
+      "sha256": "0c575b1862b690e3705d091a9c9b36d586ec97555f8de5d62fcbb22a44462f28"
+    },
+    {
+      "path": "docs/implementation/DELETE_SAFETY.md",
+      "sha256": "b5cc03aa2408d1c8155f940f3d282ac3eed2da86d359088a2960df41b8ecd686"
+    },
+    {
+      "path": "docs/implementation/PROVIDER_SCOPES.md",
+      "sha256": "95608e5caf496a3eaddb5d50eb97106a92ac5ff46134233d935752367bf43854"
+    },
+    {
+      "path": "docs/legal/CRA_CHECKLIST.md",
+      "sha256": "8846a418a0343ab6a5c2a2e51b0153da1c97d42307785689621044e06bce878d"
+    },
+    {
+      "path": "docs/legal/LEGAL_NOTES_DE.md",
+      "sha256": "8e4ac4a61469e6234c381b221fe1c5241861b540408d3831e9e3dd583469e7fa"
+    },
+    {
+      "path": "docs/legal/PRIVACY_ARCHITECTURE.md",
+      "sha256": "0192989cbb4c6adf43e9fd92e6dc95f74a4ce91f778740034a1a40bf1ad8c7de"
+    },
+    {
+      "path": "docs/legal/TERMS_STRUCTURE_DRAFT_DE.md",
+      "sha256": "ba1425e4f13a2c8872134b83b253a74d55888fa1b1865b60b9a6ba281f843085"
+    },
+    {
+      "path": "docs/product/BRAND_ARCHITECTURE.md",
+      "sha256": "2079b104dbbfaa86dffce063163a5575e82975c255483ae4d608dc7df3019acf"
+    },
+    {
+      "path": "docs/product/COMPETITOR_MATRIX.md",
+      "sha256": "97b1322c5f6d9f1534ab0b86dec9913d125951bd6fa03c6704c29e2099aa5c26"
+    },
+    {
+      "path": "docs/product/PRODUCT_REQUIREMENTS.md",
+      "sha256": "be56ad6e491bf3ee0d1c3dcb518f88981f50dc5a3bf94fb0bfcce0601ea6fce1"
+    },
+    {
+      "path": "docs/product/ROADMAP.md",
+      "sha256": "4edcc0e82b706b4a759ab65fa85a27e8c3a0316b4fd9c14f09aed7af58685dfb"
+    },
+    {
+      "path": "docs/research/SOURCES.md",
+      "sha256": "5606d282a78edc78c1273adb16de3d9f89ef79cf7750c7759fc6a7dc800ce3fa"
+    },
+    {
+      "path": "docs/security/SANDBOX_DESIGN.md",
+      "sha256": "f33d7bd57f56d88094cc5b402b94a98d4b679c50bebd67d409c4aaaccc7a7e35"
+    },
+    {
+      "path": "docs/security/SCANNER_PIPELINE.md",
+      "sha256": "fe22f8a6686220e09a62f55d5fd5adcc0053f336d18a54d64ea2a07638bdb9b8"
+    },
+    {
+      "path": "docs/security/SECURITY_INVARIANTS.md",
+      "sha256": "6ea7e7c94453777e888cfd89e62bf943ec527cfa1d371521b57bf5879c155ea5"
+    },
+    {
+      "path": "docs/security/SUPPLY_CHAIN.md",
+      "sha256": "c5aa394a809668a8dab83d9889f41392e780c0eb57b880e70dca68f68d231a1b"
+    },
+    {
+      "path": "docs/security/TEST_STRATEGY.md",
+      "sha256": "1b6c7c2e4996266b2713b46f189f39cea8bb0e828ff0912eca02a8ac4ea6d042"
+    },
+    {
+      "path": "docs/security/THREAT_MODEL.md",
+      "sha256": "c3ce266904968fc4c117855c2aab6e50a3086e2482c8ba0e3abd2743b286e804"
+    },
+    {
+      "path": "providers/gmail/README.md",
+      "sha256": "52b800fb0af546582450aeece1c89492ce69f2e14ab32ccf05002d6881f6d592"
+    },
+    {
+      "path": "providers/imap/README.md",
+      "sha256": "e267a8c86eba9f667cbdd692425df0bb300e9ba2dcb2b92c17b7c60b683dea51"
+    },
+    {
+      "path": "providers/msgraph/README.md",
+      "sha256": "a0ca02cca659b687770ac64b0fefeeefeb85684b72dd11f7d4ddfd58e763cb70"
+    },
+    {
+      "path": "rules/default-rules.yaml",
+      "sha256": "42250b190d73fab0ab448f7e768f7fd098582fac00c4b2900b378c8499510c5c"
+    },
+    {
+      "path": "schemas/risk-report.schema.json",
+      "sha256": "931ee30d0309b6655f7aad2cd4a847727a33472a03dc6d0097454c2ee6719ddd"
+    },
+    {
+      "path": "scripts/build-linux.sh",
+      "sha256": "e074140feb800df54b99bd111f24a9b956d509a9c15d5f4a6eb20c3cffd79e59"
+    },
+    {
+      "path": "scripts/build-macos.sh",
+      "sha256": "77a1165312e4979676a21246ea54d4ecd0f46b29d3668738e0f621d34c20067c"
+    },
+    {
+      "path": "scripts/build-windows.ps1",
+      "sha256": "688657b24a15ca379e6bab33ba6b4786c393171300cb9d1cb5de645909971bd7"
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "sha256": "426f99a267e0bd9f8101513644f85edc7aa83428e82a7469741df92d67788ac9"
+    }
+  ]
+}

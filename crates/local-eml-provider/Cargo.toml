@@ -1,0 +1,13 @@
+[package]
+name = "local-eml-provider"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true
+mailparse.workspace = true
+time.workspace = true
+domain = { path = "../domain" }
+provider-api = { path = "../provider-api" }

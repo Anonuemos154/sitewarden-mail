@@ -1,0 +1,10 @@
+[package]
+name = "url-guard"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+url.workspace = true
+idna.workspace = true

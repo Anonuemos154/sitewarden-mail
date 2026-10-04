@@ -1,0 +1,10 @@
+[package]
+name = "cleanup-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+uuid.workspace = true
+domain = { path = "../domain" }

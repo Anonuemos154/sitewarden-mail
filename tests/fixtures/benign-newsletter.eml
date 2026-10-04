@@ -1,0 +1,10 @@
+From: updates@example.test
+To: analyst@example.test
+Subject: Synthetic weekly update
+Date: Sun, 04 Oct 2026 09:00:00 +0200
+Message-ID: <benign-20261004@example.test>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is a synthetic fixture. Read the project notes at
+https://example.test/notes and do not treat this message as real mail.

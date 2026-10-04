@@ -1,0 +1,9 @@
+{
+  "name": "de.sitewarden.mail.bridge",
+  "description": "SiteWarden Mail native bridge",
+  "path": "C:\\\\Program Files\\\\SiteWarden Mail\\\\sitewarden-mail-bridge.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://REPLACE_WITH_STORE_EXTENSION_ID/"
+  ]
+}

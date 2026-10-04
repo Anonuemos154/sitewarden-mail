@@ -1,0 +1,45 @@
+version: 1
+rules:
+  - id: auth-dmarc-fail
+    category: authentication
+    when:
+      dmarc: fail
+    signal:
+      severity: high
+      code: auth.dmarc.fail
+
+  - id: reply-to-domain-mismatch
+    category: identity
+    when:
+      from_domain_differs_from_reply_to: true
+    signal:
+      severity: medium
+      code: identity.reply_to_mismatch
+
+  - id: executable-attachment
+    category: attachment
+    when:
+      extension_in:
+        - exe
+        - scr
+        - com
+        - bat
+        - cmd
+        - ps1
+        - js
+        - jse
+        - vbs
+        - lnk
+    action:
+      quarantine: true
+    signal:
+      severity: high
+      code: attachment.executable
+
+  - id: archive-bomb-guard
+    category: attachment
+    limits:
+      max_archive_depth: 3
+      max_entries: 1000
+      max_expanded_bytes: 536870912
+      max_ratio: 100
